@@ -2,18 +2,18 @@
  CREATE DATABASE SQL_PROJECT_01;
 -- CREAT TABLE --
 CREATE TABLE retail_sales(
-						transactions_id	INT PRIMARY KEY,
-						sale_date DATE,	
-						sale_time TIME,
-						customer_id	INT,
-						gender VARCHAR (15),
-						age	INT,
-						category VARCHAR(20),	
-						quantiy	INT,
-						price_per_unit FLOAT,
-						cogs FLOAT,
-						total_sale FLOAT
-					     );
+			transactions_id	INT PRIMARY KEY,
+			sale_date DATE,	
+			sale_time TIME,
+			customer_id	INT,
+			gender VARCHAR (15),
+			age	INT,
+			category VARCHAR(20),	
+			quantiy	INT,
+			price_per_unit FLOAT,
+			cogs FLOAT,
+			total_sale FLOAT
+		     );
 
 
 SELECT * FROM retail_sales ;
@@ -191,7 +191,7 @@ FROM hourly_sale
 GROUP BY shift;
 
 
--- changes tables column name --
+-- changing tables column name --
 alter table retail_sales
  rename column quantiy to quantity;
 
