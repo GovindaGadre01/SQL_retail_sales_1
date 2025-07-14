@@ -26,18 +26,18 @@ This project is designed to demonstrate SQL skills and techniques typically used
 CREATE DATABASE p1_retail_db;
 
 CREATE TABLE retail_sales(
-						transactions_id	INT PRIMARY KEY,
-						sale_date DATE,	
-						sale_time TIME,
-						customer_id	INT,
-						gender VARCHAR (15),
-						age	INT,
-						category VARCHAR(20),	
-						quantiy	INT,
-						price_per_unit FLOAT,
-						cogs FLOAT,
-						total_sale FLOAT
-					     );
+			transactions_id	INT PRIMARY KEY,
+			sale_date DATE,	
+			sale_time TIME,
+			customer_id	INT,
+			gender VARCHAR (15),
+			age	INT,
+			category VARCHAR(20),	
+			quantiy	INT,
+			price_per_unit FLOAT,
+			cogs FLOAT,
+			total_sale FLOAT
+		     );
 ```
 
 ### 2. Data Exploration & Cleaning
@@ -49,6 +49,7 @@ CREATE TABLE retail_sales(
 
 ```sql
 --Data Exploration
+
 SELECT COUNT(*)
     FROM retail_sales
 SELECT COUNT( DISTINCT customer_id) AS total_customer
@@ -57,7 +58,9 @@ SELECT COUNT(DISTINCT category) AS total_category
     FROM retail_sales;
 SELECT * FROM retail_sales
 	WHERE transactions_id IS NULL;
+
 -- Data cleaning
+
 SELECT * FROM retail_sales
 	WHERE sale_date IS NULL;
 
@@ -275,6 +278,5 @@ For more content on SQL, data analysis, and other data-related topics, make sure
 
 
 - **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/govinda-gadre)
-- **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
 
 Thank you for your support, and I look forward to connecting with you!
